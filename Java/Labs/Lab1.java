@@ -1,35 +1,29 @@
 public class Lab1 { 
 
-    // Constructor 
+    // Default Constructor 
     public Lab1() {
         System.out.println("Class is activated !!");
     }
 
-    // Overloaded methods
-    public void Subject(String sub1, String sub2) {
-        System.out.println("Subjects are " + sub1 + " and " + sub2);
+    // Overloaded Constructor with one parameter
+    public Lab1(String message) {
+        System.out.println(message);
     }
 
-    public void Subject(int m1, int m2) { 
-        System.out.println("Marks are " + m1 + " and " + m2);
+    // Overloaded Constructor with two parameters
+    public Lab1(String message, int number) {
+        System.out.println(message + " Number: " + number);
     }
 
-    public void Subject(int m1, int m2, int m3) { 
-        System.out.println("Marks are " + m1 + ", " + m2 + ", and " + m3);
-    }
-
-    public void Subject(String s1, int m1, String s2, int m2) { 
-        System.out.println("Marks in " + s1 + " is " + m1);
-        System.out.println("Marks in " + s2 + " is " + m2);
+    // Overloaded Constructor with three parameters
+    public Lab1(String message, int number1, int number2) {
+        System.out.println(message + " Numbers: " + number1 + ", " + number2);
     }
 
     public static void main(String[] args) {
         Lab1 var1 = new Lab1();
-
-        // Call the overloaded methods
-        var1.Subject("Maths", "Science");
-        var1.Subject(45, 65);
-        var1.Subject(45, 65, 53);
-        var1.Subject("Maths", 45, "Science", 63);
+        Lab1 var2 = new Lab1("Hello");
+        Lab1 var3 = new Lab1("Hello", 45);
+        Lab1 var4 = new Lab1("Hello", 10, 20);
     }
 }
