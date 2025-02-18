@@ -53,18 +53,46 @@
 
 
 
-public class Main{
+// public class Main{
 
-    public static  class Check{ 
-        int num1=45;
-        int num2=1;
-        Check(){
-            System.out.println("This line is called");
-        }
-    }
-    public static void main(String[] args) {
-        Check var1=new Check();
-    }
+//     public static  class Check{ 
+//         int num1=45;
+//         int num2=1;
+//         Check(){
+//             System.out.println("This line is called");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Check var1=new Check();
+//     }
    
-}
+// }
 
+
+//Example of constructor
+// public class Main{
+//     int num1=45;
+//     int num2=63;
+//     Main(){
+//         System.out.println("Hello I am being called.");
+//     }
+//     public static void main(String[] args) {
+//         Main var1=new Main();
+        
+        
+//     }
+// }
+
+public class Main{
+    public static void main(String[] args) {
+        int a =5;
+        int b=3;
+        System.out.println(a+b);
+        System.out.println((a>b)&&(b<a));
+        System.out.println(!(b>a));
+        System.out.println(a&b);
+        System.out.println(a<<1);
+        System.out.println(b>>1);
+        
+    }
+}
