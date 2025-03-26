@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skin Analysis</title>
+</head>
+<body>
+    <h2>Upload Your Photo for Analysis</h2>
+    
+    <!-- File Upload Input -->
+    <input type="file" id="imageInput" accept="image/*">
+    
+    <!-- Button to Send Request -->
+    <button id="analyzeBtn">Analyze Photo</button>
+
+    <!-- Area to Display API Response -->
+    <div id="responseOutput"></div>
+
+    <script>
+        document.getElementById("analyzeBtn").addEventListener("click", function () {
+            // Get the uploaded file
+            const fileInput = document.getElementById("imageInput");
+            const file = fileInput.files[0];
+
+            if (!file) {
+                alert("Please upload an image first.");
+                return;
+            }
+
+            // Create FormData object for sending the image
+            const formData = new FormData();
+            formData.append("image", file);
+            formData.append("retouch_degree", "1.0");
+            formData.append("whitening_degree", "1.0");
+
+            // Initialize XMLHttpRequest
+            const xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === this.DONE) {
+                    document.getElementById("responseOutput").innerText = this.responseText;
+                }
+            });
+
+            // Set up the API request
+            xhr.open("POST", "https://ai-skin-beauty.p.rapidapi.com/face/editing/retouch-skin");
+            xhr.setRequestHeader('x-rapidapi-key', 'ed46d19333msh2d5e56dd538a5c0p14193bjsn4cf21bef07de');
+xhr.setRequestHeader('x-rapidapi-host', 'ai-skin-beauty.p.rapidapi.com');
+
+            // Send the request with the image
+            xhr.send(formData);
+        });Simple code. Jaise, 84. Hello Cortana I'm and I'm presenting my project. Basically this is not project, this is. I'm I'm looking at the surveillance and any other. Basically this is a line of code which is used in the cameras we can use, especially if you have no the simply available on Amazon but. If I. Integrate the camera. Here this is the. We can include the with columns especially they are more setup. At particular time we just use my webcam as CCTV camera in this. Project this product. The code will be generated in the pendulum and we can include the in the CCD camera by the Our TCP IP assistance. Hey, Cortana. This place is normal. For example. Columbus website NEEM operation. Oscar. Photo upload. I. Hey, Cortana. A laptop. Hardware. Thank you. I. Hey, Cortana. I am a student of university so. Hello. Yes, ma'am. Yes, ma'am, like when we focus of. It. OK. PM. Hey. Next I will do next. Yes. Good morning. I hope you know how to make like. And that things that happened today, I hope all more about it. So my idea is I can't stop that thing that we can reduce the rate. So. So. If you click on that button, you have to just say a word. L. Then it send a alert to the nearby people or police station Oregon family. Hey, Cortana. 
+    </script>
+</body>
+</html>

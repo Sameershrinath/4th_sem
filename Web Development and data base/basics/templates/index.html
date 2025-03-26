@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+        }
+        textarea, select {
+            width: 50%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+       
+        .buttons {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Registration check</h1>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" required></textarea>
+        <br><br>
+        
+        <label>Gender:</label><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male" required><br>
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female"><br>
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="Other"><br>
+
+        <br>
+        
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="hobbies" value="Traveling">
+        <label for="traveling">Traveling</label>
+        <input type="checkbox"  name="hobbies" value="Gaming">
+        <label for="gaming">Gaming</label>
+  
+        <br><br>
+        
+        <label for="country">Select Country:</label>
+        <select id="select_box" name="country" required>
+            <option value="">--Select--</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+        </select>
+
+        <br><br>
+
+        <div class="buttons">
+            <input type="submit" value="Register" onclick="window.location.href='GA1.html'; return false;">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <br>
+</body>
+</html>
