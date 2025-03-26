@@ -1,0 +1,42 @@
+,outlook,temperature,humidity,windy,play
+,overcast,hot,high,FALSE,yes
+,overcast,cool,normal,TRUE,yes
+,overcast,mild,high,TRUE,yes
+,overcast,hot,normal,FALSE,yes
+,rainy,mild,high,FALSE,yes
+,rainy,cool,normal,FALSE,yes
+,rainy,cool,normal,TRUE,no
+,rainy,mild,normal,FALSE,yes
+,rainy,mild,high,TRUE,no
+,sunny,hot,high,FALSE,no
+,sunny,hot,high,TRUE,no
+,sunny,mild,high,FALSE,no
+,sunny,cool,normal,FALSE,yes
+,sunny,mild,normal,TRUE,yes
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,temperature,humidity,windy,play
+Outlook,rainy,mild,high,FALSE,yes
+,rainy,cool,normal,FALSE,yes
+,rainy,cool,normal,TRUE,no
+,rainy,mild,normal,FALSE,yes
+,rainy,mild,high,TRUE,no
+,,,,,
+,sunny,hot,high,FALSE,no
+,sunny,hot,high,TRUE,no
+,sunny,mild,high,FALSE,no
+,sunny,cool,normal,FALSE,yes
+,sunny,mild,normal,TRUE,yes
+,,,,,
+,overcast,hot,high,FALSE,yes
+,overcast,cool,normal,TRUE,yes
+,overcast,mild,high,TRUE,yes
+,overcast,hot,normal,FALSE,yes
+,,,,,
+,,,,,
+,,,,,
+,0,hot(0Y and 2N),high(0Y and 3N),True(1Y and 1N),
+,1,mild (1Y and 1N),normal(2Y and 0N),False(1Y and 2N),
+,0,cool (1Y),,,
