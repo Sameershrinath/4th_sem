@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const pass="sameer";
+
+        function checkingpass(){
+let userInput=prompt("Enter your password");
+
+if (userInput==null){
+    alert("you didn't entered anything");
+    checkingpass();
+}
+else if(userInput==pass){
+    const user_confirmation=confirm("Are you sure?");
+    if (user_confirmation==true){
+        window.location.href="https://google.com";
+    }
+    else{
+        checkingpass();
+    }
+}
+
+else{
+    alert("You entered teh wrong password");
+    checkingpass();
+}
+        }
+
+        window.onload=checkingpass();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
