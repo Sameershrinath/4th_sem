@@ -13,7 +13,7 @@ class Calculator {
     void calculate() {
         System.out.println("Performing basic calculations.");
     }
-}
+}   
 
 // Child class
 class AdvancedCalculator extends Calculator {

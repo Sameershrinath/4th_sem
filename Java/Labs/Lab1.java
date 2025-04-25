@@ -22,8 +22,9 @@ public class Lab1 {
 
     public static void main(String[] args) {
         Lab1 var1 = new Lab1();
+        
         Lab1 var2 = new Lab1("Hello");
-        Lab1 var3 = new Lab1("Hello", 45);
+        Lab1 var3 = new Lab1("shreya", 45);
         Lab1 var4 = new Lab1("Hello", 10, 20);
     }
 }
